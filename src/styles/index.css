@@ -296,16 +296,11 @@ top: 215px;
   top:4950px;
 }
 
-.large{
-  position:absolute;
-  left:590px;
-  height:710px;
-  width:750px;
-}
-
-.small{
-  position:absolute;
-  left:625px;
-  height:690px;
-  width:690px;
+.run-ads{
+  background-color: #0F6EFF;
+  height: 562px;
+  position: absolute;
+  top:5597px;
+  width: 100vw;
+  left: 0px;
 }
