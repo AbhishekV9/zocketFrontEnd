@@ -1,6 +1,6 @@
 html{
   position: relative;
-  height: 9267px;
+  height: 7484px;
   background: #FFFFFF;
   font-family: 'Eudoxus Sans','Comforter Brush', cursive;
   overflow:scroll;
@@ -314,5 +314,13 @@ top: 215px;
   position: absolute;
   top:7100px;
   left:0;
+}
 
+.footer{
+  width:100vw;
+  position: absolute;
+  left:0;
+  top:7401px;
+  height:83px;
+  background-color: #093D8A;;
 }
