@@ -288,3 +288,22 @@ top: 215px;
   left: 934px;
   top: 2165px;
 }
+
+.feature1{
+  position: absolute;
+  top:3570px;
+}
+
+.feature2{
+  position: absolute;
+  top:4239.5px;
+  height: 658px;
+  width: 98vw;
+  background-color:  #F7FAFF;
+  border:1px solid lightblue;
+}
+
+.feature3{
+  position: absolute;
+  top:4950px;
+}
