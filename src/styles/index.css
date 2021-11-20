@@ -304,3 +304,15 @@ top: 215px;
   width: 100vw;
   left: 0px;
 }
+
+.about{
+  height: 300px;
+  width:100vw;
+  background: #F6FAFF;
+  border: 1.5px solid #E3EEFD;
+  box-sizing: border-box;
+  position: absolute;
+  top:7100px;
+  left:0;
+
+}
