@@ -3,8 +3,12 @@ html{
   height: 9267px;
   background: #FFFFFF;
   font-family: 'Eudoxus Sans','Comforter Brush', cursive;
+  overflow:scroll;
 }
 
+html::-webkit-scrollbar{
+  display: none;
+}
 
 .logo{
   position: absolute;
@@ -94,32 +98,24 @@ html{
 
 .men{
   position: absolute;
-  width: 790px;
-  height: 666px;
   left: 556px;
   top: 99px;
 }
 
 .ads{
 position: absolute;
-width: 580px;
-height: 150px;
 left: 60px;
 top: 215px;
 }
 
 .vector{
   position: absolute;
-  width: 76.8px;
-  height: 19.29px;
   left: 62.61px;
   top: 365px;
 }
 
 .grow{
   position: absolute;
-  width: 470px;
-  height: 55px;
   left: 60px;
   top: 403px;
 }
@@ -129,7 +125,7 @@ top: 215px;
   width: 339px;
   height: 55px;
   left: 60px;
-  top: 505px;
+  top: 490px;
   border:1px solid grey;
   border-radius:12px;
   font-size: 20px;
@@ -144,21 +140,17 @@ top: 215px;
   width: 165px;
   height: 55px;
   left: 412px;
-  top: 505px;
+  top: 490px;
 }
 
 .vector2{
   position: absolute;
-  width: 8.79px;
-  height: 53.82px;
   left: 204.98px;
   top: 624px;
 }
 
 .vector1{
   position: absolute;
-  width: 30.75px;
-  height: 30.75px;
   left: 194px;
   top: 658.82px;
 }
@@ -167,8 +159,8 @@ top: 215px;
   position: absolute;
   width: 1274px;
   height: 846px;
-  left: 33px;
-  top: 778px;
+  left: 43px;
+  top: 773px;
   background: #F7FAFF;
   border:1px solid lightblue;
   border-radius: 50px;
@@ -176,8 +168,6 @@ top: 215px;
 
 .mobile{
   position: absolute;
-  width: 379px;
-  height: 630px;
   left: 80px;
   top: 216px;
 }
@@ -221,8 +211,6 @@ top: 215px;
 
 .logo4{
   position: absolute;
-  width: 89.54px;
-  height: 109px;
   left:50px;
   top:25px;
 }
@@ -306,4 +294,18 @@ top: 215px;
 .feature3{
   position: absolute;
   top:4950px;
+}
+
+.large{
+  position:absolute;
+  left:590px;
+  height:710px;
+  width:750px;
+}
+
+.small{
+  position:absolute;
+  left:625px;
+  height:690px;
+  width:690px;
 }

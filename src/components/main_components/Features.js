@@ -8,7 +8,7 @@ const Features = (props) => {
             <div className={props.c}>
                 <img src={props.logo} style={{ position:"absolute",top:"150px", left:"75px"}}/>
                 <img src={props.description} style={{ position:"absolute",top:"240px", left:"75px"}} />
-                <img src={props.image} style={{ position:"absolute",left:"600px", height:"710px",width:"730px"}} />
+                <img src={props.image} className={props.c1}  />
             </div>
             :
             <div className={props.c}>

@@ -17,9 +17,9 @@ const Bestfeatures = () => {
     return (
         <div>
             <img src={Heading} alt="Heading" style={{ position:"absolute", top:"3408px", left:"500px"}}/>
-            <Features c={"feature1"} left={true} logo={Logo1} description={Description1} image={Image1}/>
+            <Features c={"feature1"} c1={"small"} left={true} logo={Logo1} description={Description1} image={Image1}/>
             <Features c={"feature2"} left={false} logo={Logo2} description={Description2} image={Image2} />
-            <Features c={"feature3"} left={true} logo={Logo3} description={Description3} image={Image3} />
+            <Features c={"feature3"} c1={"large"} left={true} logo={Logo3} description={Description3} image={Image3} />
         </div>
     )
 }
