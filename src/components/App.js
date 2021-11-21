@@ -4,26 +4,25 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
-import User_info from './User';
+import User from './User';
 
 const App = () => {
   return (
     <div>
+   
         <Routes>
           <Route 
             path='/'
-            
             element={
-              <div><User_info/> </div>
+              <div><Header/> <Main/> <Footer/> </div>
             }
             />
             <Route 
-              path="footer"
-              element={ 
-              
-              <Footer/>}
+              path="/showEmail"
+              element={<User/>}
             />
         </Routes>
+        
     </div>
   )
 }

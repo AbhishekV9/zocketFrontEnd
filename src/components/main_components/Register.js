@@ -56,7 +56,7 @@ const Register = () => {
         setToaster(true);
         setTimeout(()=>{
             setToaster(false);
-            navigate('/footer');
+            navigate('/showEmail');
         },2000)
     }
 
