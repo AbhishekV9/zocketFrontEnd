@@ -1,31 +1,29 @@
-import React from 'react'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
+import User_info from './User';
 
 const App = () => {
-  // const[email,setEmail]=useState("");
-  // var headers = {}
-  // const url="http://localhost:8000/register";
-  // const handleClick=()=>{
-  //   fetch(url,{
-  //     method : "GET",
-  //     mode: 'cors',
-  //     header:headers
-  //   })
-  //   .then(res=>res.json())
-  //   .then(data=>console.log(data))
-  //   .catch((err)=>{
-  //     console.log(err);
-  //   })
-  // }
   return (
     <div>
-        <Header/>
-        {/* <input type="email" onChange={(e)=>setEmail(e.target.value)}/>
-        <button onClick={handleClick}>submit</button> */}
-        <Main/>
-        <Footer />
+        <Routes>
+          <Route 
+            path='/'
+            
+            element={
+              <div><User_info/> </div>
+            }
+            />
+            <Route 
+              path="footer"
+              element={ 
+              
+              <Footer/>}
+            />
+        </Routes>
     </div>
   )
 }

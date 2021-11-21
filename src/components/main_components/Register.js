@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import Alert from '@mui/material/Alert';
+import { useNavigate } from 'react-router-dom';
 
 import DontMiss from "../../assets/Group 12459.png";
 import Men from "../../assets/Group 16750.png";
@@ -11,7 +12,7 @@ import Vector2 from "../../assets/Vector-2.png";
 import Vector1 from "../../assets/Vector-1.png";
 
 const Register = () => {
-
+    let navigate=useNavigate();
     const [Email, setEmail] = useState("");
     const [alertClass,setAlertClass] =useState("");
     const [showToaster,setToaster] = useState(false);
@@ -34,6 +35,7 @@ const Register = () => {
             body:formBody
         }).then(res => res.json())
         .then((data)=>{
+            console.log(data);
             const {isPresent,notValid,registered,message}=data;
             setMessage(message);
             if(isPresent){
@@ -54,6 +56,7 @@ const Register = () => {
         setToaster(true);
         setTimeout(()=>{
             setToaster(false);
+            navigate('/footer');
         },2000)
     }
 
