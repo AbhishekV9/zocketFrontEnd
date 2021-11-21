@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Alert from '@mui/material/Alert';
 
 import DontMiss from "../../assets/Group 12459.png";
 import Men from "../../assets/Group 16750.png";
@@ -12,6 +13,9 @@ import Vector1 from "../../assets/Vector-1.png";
 const Register = () => {
 
     const [Email, setEmail] = useState("");
+    const [alertClass,setAlertClass] =useState("");
+    const [showToaster,setToaster] = useState(false);
+    const [mess,setMessage]= useState("");
 
     const handlechange=(e)=>{
         setEmail(e.target.value);
@@ -22,7 +26,7 @@ const Register = () => {
         let encodedKey=encodeURIComponent("email");
         let encodedValue=encodeURIComponent(Email);
         formBody.push(encodedKey+'=' + encodedValue);
-        
+
         const url="http://localhost:8000/register";
         await fetch(url,{
             method:'POST',
@@ -30,13 +34,37 @@ const Register = () => {
             body:formBody
         }).then(res => res.json())
         .then((data)=>{
-            console.log(data);
+            const {isPresent,notValid,registered,message}=data;
+            setMessage(message);
+            if(isPresent){
+                setAlertClass("info");
+                handletoaster();
+            }else if(notValid){
+                setAlertClass("error");
+                handletoaster();
+            }else if(registered){
+                setAlertClass("success");
+                handletoaster();
+            }
         });
         setEmail("");
     }
 
+    const handletoaster=()=>{
+        setToaster(true);
+        setTimeout(()=>{
+            setToaster(false);
+        },2000)
+    }
+
     return (
         <div>
+            <div className="alert">
+                { showToaster && <Alert severity={alertClass}>
+                    {mess}
+                </Alert>
+                }
+            </div>
             <img className="dont"src={DontMiss} alt="Don't Miss"></img>
             <img src={Men} className="men" alt="detail"/>
             <img src={Ads} className="ads" alt="heading"/>

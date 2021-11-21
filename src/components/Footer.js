@@ -10,7 +10,7 @@ import border from "../assets/_.png";
 const Footer = () => {
     return (
         <div className="footer">
-            <img src={privacy} alt="privacy"  style={{ position:"absolute", left:"136px", top:"35px" }} />
+            <img src={Copyright} alt="privacy"  style={{ position:"absolute", left:"136px", top:"35px" }} />
             <img src={privacy} alt="privacy"  style={{ position:"absolute", left:"656px", top:"35px" }}   />
             <img src={facebooklogo} alt="fblogo" style={{ position:"absolute", left:"1193px", top:"35px" }} />
             <img src={border} alt="border" style={{ position:"absolute", left:"1223px", top:"35px" }} />
