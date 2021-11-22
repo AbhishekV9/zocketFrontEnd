@@ -10,10 +10,10 @@ import About from './main_components/About';
 import Easy from "../assets/Group 13872.png";
 import Review from './main_components/Review';
 
-const Main = () => {
+const Main = (props) => {
     return (
         <div>
-            <Register/>
+            <Register getUrl={props.getUrl} />
             <Purpose/>
             <Choosezocket/>
             <img src={Easy} alt="3 Easy Steps" style={{ position:"absolute", top:"2512px", left:"53px"}} />

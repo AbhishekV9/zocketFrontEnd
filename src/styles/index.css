@@ -269,3 +269,17 @@ top: 215px;
   left: 80px;
   width:320px;
 }
+
+.userInfo1{
+  position: absolute;
+  font-weight: 600;
+  top:100px;
+  left:100px;
+}
+
+.userEmail{
+  position: absolute;
+  font-weight: 600;
+  top:100px;
+  left:220px;
+}

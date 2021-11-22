@@ -11,7 +11,7 @@ import Group from "../../assets/Group88.png";
 import Vector2 from "../../assets/Vector-2.png";
 import Vector1 from "../../assets/Vector-1.png";
 
-const Register = () => {
+const Register = (props) => {
     let navigate=useNavigate();
     const [Email, setEmail] = useState("");
     const [alertClass,setAlertClass] =useState("");
@@ -36,28 +36,29 @@ const Register = () => {
         }).then(res => res.json())
         .then((data)=>{
             console.log(data);
-            const {isPresent,notValid,registered,message}=data;
+            const {isPresent,notValid,registered,path,message}=data;
             setMessage(message);
             if(isPresent){
                 setAlertClass("info");
-                handletoaster();
+                handletoaster(path);
             }else if(notValid){
                 setAlertClass("error");
                 handletoaster();
             }else if(registered){
                 setAlertClass("success");
-                handletoaster();
+                handletoaster(path);
             }
         });
         setEmail("");
     }
 
-    const handletoaster=()=>{
+    const handletoaster=(path)=>{
         setToaster(true);
         setTimeout(()=>{
             setToaster(false);
+            props.getUrl(path);
             navigate('/showEmail');
-        },2000)
+        },1000)
     }
 
     return (
