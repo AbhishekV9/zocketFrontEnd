@@ -273,17 +273,23 @@ top: 215px;
 .userInfo1{
   position: absolute;
   font-weight: 500;
-  top:100px;
+  top:150px;
   left:100px;
 }
 
 .userEmail{
   position: absolute;
   font-weight: 500;
-  top:100px;
+  top:150px;
   left:220px;
 }
 
 .b:hover{
   transform: scale(1.05);
+}
+
+.alert-user{
+  position: absolute;
+  top:85px;
+  left:80px
 }
