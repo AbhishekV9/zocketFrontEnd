@@ -28,7 +28,7 @@ const Register = (props) => {
         let encodedValue=encodeURIComponent(Email);
         formBody.push(encodedKey+'=' + encodedValue);
 
-        const url="http://localhost:8000/register";
+        const url="https://zocket99.herokuapp.com/register";
         await fetch(url,{
             method:'POST',
             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
@@ -43,7 +43,7 @@ const Register = (props) => {
                 handletoaster(path);
             }else if(notValid){
                 setAlertClass("error");
-                handletoaster();
+                handletoaster("");
             }else if(registered){
                 setAlertClass("success");
                 handletoaster(path);
@@ -56,8 +56,10 @@ const Register = (props) => {
         setToaster(true);
         setTimeout(()=>{
             setToaster(false);
-            props.getUrl(path);
-            navigate('/showEmail');
+            if(path.length!==0){
+                props.getUrl(path);
+                navigate('/showEmail');
+            }
         },1000)
     }
 

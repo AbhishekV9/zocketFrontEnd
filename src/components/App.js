@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -7,7 +7,7 @@ import Main from './Main';
 import User from './User';
 
 const App = () => {
-
+  
   const [Path, setPath] = useState("");
 
   const getUrl=(url)=>{
