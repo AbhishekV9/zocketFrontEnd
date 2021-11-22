@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/zocketFrontEnd/static/css/main.880a2ecf.chunk.css",
+    "main.js": "/zocketFrontEnd/static/js/main.09000b06.chunk.js",
+    "main.js.map": "/zocketFrontEnd/static/js/main.09000b06.chunk.js.map",
+    "runtime-main.js": "/zocketFrontEnd/static/js/runtime-main.a3db4ace.js",
+    "runtime-main.js.map": "/zocketFrontEnd/static/js/runtime-main.a3db4ace.js.map",
+    "static/js/2.0963d940.chunk.js": "/zocketFrontEnd/static/js/2.0963d940.chunk.js",
+    "static/js/2.0963d940.chunk.js.map": "/zocketFrontEnd/static/js/2.0963d940.chunk.js.map",
+    "index.html": "/zocketFrontEnd/index.html",
+    "static/css/main.880a2ecf.chunk.css.map": "/zocketFrontEnd/static/css/main.880a2ecf.chunk.css.map",
+    "static/js/2.0963d940.chunk.js.LICENSE.txt": "/zocketFrontEnd/static/js/2.0963d940.chunk.js.LICENSE.txt",
+    "static/media/Facebook Ads In 30 Seconds.e52933d9.png": "/zocketFrontEnd/static/media/Facebook Ads In 30 Seconds.e52933d9.png",
+    "static/media/Group 12479.483492e1.png": "/zocketFrontEnd/static/media/Group 12479.483492e1.png",
+    "static/media/Group 13821.85c1623c.png": "/zocketFrontEnd/static/media/Group 13821.85c1623c.png",
+    "static/media/Group 13872.6b4600fe.png": "/zocketFrontEnd/static/media/Group 13872.6b4600fe.png",
+    "static/media/Group 16557.7538b595.png": "/zocketFrontEnd/static/media/Group 16557.7538b595.png",
+    "static/media/Group 16558.cab97ac7.png": "/zocketFrontEnd/static/media/Group 16558.cab97ac7.png",
+    "static/media/Group 16593.5b13607a.png": "/zocketFrontEnd/static/media/Group 16593.5b13607a.png",
+    "static/media/Group 16691.9a6b1157.png": "/zocketFrontEnd/static/media/Group 16691.9a6b1157.png",
+    "static/media/Group 16707.332dd594.png": "/zocketFrontEnd/static/media/Group 16707.332dd594.png",
+    "static/media/Group 16708.43aeeb44.png": "/zocketFrontEnd/static/media/Group 16708.43aeeb44.png",
+    "static/media/Group 16744.9784ffc0.png": "/zocketFrontEnd/static/media/Group 16744.9784ffc0.png",
+    "static/media/Group 16745.2b88e454.png": "/zocketFrontEnd/static/media/Group 16745.2b88e454.png",
+    "static/media/Group 16747.9dcef7b8.png": "/zocketFrontEnd/static/media/Group 16747.9dcef7b8.png",
+    "static/media/Group 16748.0c82ef6e.png": "/zocketFrontEnd/static/media/Group 16748.0c82ef6e.png",
+    "static/media/Group 16750.23b029db.png": "/zocketFrontEnd/static/media/Group 16750.23b029db.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3db4ace.js",
+    "static/js/2.0963d940.chunk.js",
+    "static/css/main.880a2ecf.chunk.css",
+    "static/js/main.09000b06.chunk.js"
+  ]
+}
