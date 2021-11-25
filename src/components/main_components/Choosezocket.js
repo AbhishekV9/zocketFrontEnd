@@ -1,38 +1,60 @@
 import React from 'react';
 import Square from './Square';
 
-import Heading from "../../assets/Group 13871.png";
-import Logo1 from "../../assets/Group 13849.png";
-import Logo2 from "../../assets/Group 13880.png";
-import Logo3 from "../../assets/Group 13852.png";
-import Logo4 from "../../assets/Group 13859.png";
-import Logo5 from "../../assets/Group 13861.png";
-import Logo6 from "../../assets/Take.png"
-import heading1 from "../../assets/Get.png";
-import heading2 from "../../assets/Receives.png";
-import heading3 from "../../assets/Gain.png";
-import heading4 from "../../assets/Group 13858.png";
-import heading5 from "../../assets/Group 13862.png";
-import description1 from "../../assets/Drive.png";
-import description2 from "../../assets/Instantly.png";
-import description3 from "../../assets/Increase.png";
-import heading6 from "../../assets/Group 13881.png";
-
-
+import Logo1 from '../../assets/Group 13849.png';
+import Logo2 from '../../assets/Group 13880.png';
+import Logo3 from '../../assets/Group 13852.png';
+import Logo4 from '../../assets/Group 13859.png';
+import Logo5 from '../../assets/Group 13861.png';
 
 
 const Choosezocket = () => {
-    return (
-        <div>
-            <img className="choose-zocketHeading"src={Heading} alt="Heading"/>
-            <Square image={Logo1} c={"box1"} heading={heading1} description={description1} />
-            <Square image={Logo2} c={"box2"} heading={heading2} description={description2} />
-            <Square image={Logo3} c={"box3"} heading={heading3} description={description3} />
-            <Square image={Logo4} c={"box4"} heading={heading4} description={""} />
-            <Square image={Logo5} c={"box5"} heading={heading5} description={""} />
-            <Square image={Logo6} c={"box6"} heading={heading6} description={""} />
-        </div>
-    )
-}
+  return (
+    <div>
+      <div className="choose-zocketHeading text-capitalize">
+        <h2 className="why-choose"> Why choose Zocket?</h2>
+        <p className="why-choose-des">Choose and build your business in few seconds</p>
+      </div>
 
-export default Choosezocket
+      <Square
+        image={Logo1}
+        c={'box1'}
+        heading="Get more customer calls"
+        description="Drive more phone calls to your business with the call campaign"
+      />
+      <Square
+        image={Logo2}
+        c={'box2'}
+        heading="Recieve more enquiries"
+        description="Instantly respond to customer enquiries and keep track of them."
+      />
+      <Square
+        image={Logo3}
+        c={'box3'}
+        heading="Gain more followers"
+        description="Increase your business' reach and gain more followers"
+      />
+      <Square
+        image={Logo4}
+        c={'box4'}
+        heading="Track your Ad Results"
+        description="Track and compare how well your ads are performing over time"
+      />
+      <Square
+        image={Logo5}
+        c={'box5'}
+        heading="Earn rewards"
+        description="Earn scratch cards every time you run ads."
+      />
+      <Square
+        // image={Logo6}
+        c={'box6'}
+        last={true}
+        heading="Take a step forward to make your business grow"
+        description="Increase your business' reach and gain more followers"
+      />
+    </div>
+  );
+};
+
+export default Choosezocket;

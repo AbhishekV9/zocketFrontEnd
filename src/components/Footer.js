@@ -1,24 +1,76 @@
-import React from 'react'
+import React from 'react';
 
-import Copyright from "../assets/copyright.png"
-import privacy from "../assets/Privacy.png";
-import facebooklogo from "../assets/Vector-5.png";
-import instalogo from "../assets/Vector-4.png";
-import linkedinlogo from "../assets/Vector-3.png";
-import border from "../assets/_.png";
+import facebooklogo from '../assets/Vector-5.png';
+import instalogo from '../assets/Vector-4.png';
+import linkedinlogo from '../assets/Vector-3.png';
 
 const Footer = () => {
-    return (
-        <div className="footer">
-            <img src={Copyright} alt="privacy"  style={{ position:"absolute", left:"136px", top:"35px" }} />
-            <img src={privacy} alt="privacy"  style={{ position:"absolute", left:"656px", top:"35px" }}   />
-            <img src={facebooklogo} alt="fblogo" style={{ position:"absolute", left:"1193px", top:"35px" }} />
-            <img src={border} alt="border" style={{ position:"absolute", left:"1223px", top:"35px" }} />
-            <img src={instalogo} alt="instalogo" style={{ position:"absolute", left:"1238px", top:"35px" }} />
-            <img src={border} alt="border" style={{ position:"absolute", left:"1267px", top:"35px" }} />
-            <img src={linkedinlogo} alt="linkedinlogo" style={{ position:"absolute", left:"1282px", top:"35px" }} />
-        </div>
-    )
-}
+  return (
+    <div className="footer">
+      <p className="footer-s"
+        style={{
+          left: '136px',
+        }}
+      >
+        Copyright 2021Zocket. All Rights Reserved
+      </p>
+      <p className="footer-s"
+        style={{
+          left: '656px',
+        }}
+      >
+        Privacy Policy
+      </p>
+      <p className="footer-s"
+        style={{
+          left: '755px',
+        }}
+      >
+        |
+      </p>
+      <p className="footer-s"
+        style={{
+          left: '760px',
+        }}
+      >
+        Terms and conditions
+      </p>
+        <img className="footer-s"
+          src={facebooklogo}
+          alt="fblogo"
+          style={{ left: '1193px' }}
+        />
+        <div style={{
+          position:"absolute",
+          left:"1223px",
+          top:"33px",
+          height:"26px",
+          width:"2px",
+          border:"0.5px solid black",
+          opacity:"0.3"
+        }}></div>
+     
+        <img className="footer-s"
+          src={instalogo}
+          alt="instalogo"
+          style={{ left: '1238px'}}
+        />
+        <div style={{
+          position:"absolute",
+          left:"1267px",
+          top:"33px",
+          height:"26px",
+          width:"2px",
+          border:"0.5px solid black",
+          opacity:"0.3"
+        }}></div>
+        <img className="footer-s"
+          src={linkedinlogo}
+          alt="linkedinlogo"
+          style={{left: '1282px'}}
+        />
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

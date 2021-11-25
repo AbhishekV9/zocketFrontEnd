@@ -6,7 +6,6 @@ import Bestfeatures from './main_components/Bestfeatures';
 import Footer from './Footer';
 import Runads from './main_components/Runads';
 import About from './main_components/About';
-
 import Easy from "../assets/Group 13872.png";
 import Review from './main_components/Review';
 
